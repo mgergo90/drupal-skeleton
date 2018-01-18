@@ -8,6 +8,8 @@ services:
     volumes:
       - ".:/var/www/html"
     working_dir: "/var/www/html"
+    command:
+      - install.sh
 
   mysql:
       image: mysql
